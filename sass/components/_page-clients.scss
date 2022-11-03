@@ -1,0 +1,54 @@
+/*INDEX - CLIENTS*/
+
+.clients-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.client {
+    flex-basis: calc((100% - 30px * 1) / 2);
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px * 2) / 3)
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * 5) / 6)
+    }
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-grey-icons);
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    transition: border-color var(--anim);
+
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+    }
+}
+
+.client__logo {
+    fill: var(--color-grey-icons);
+
+    transition: fill var(--anim);
+
+
+    .client__link:hover &,
+    .client__link:focus & {
+        fill: var(--accent-text-color);
+    }
+}

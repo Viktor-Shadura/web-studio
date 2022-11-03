@@ -1,0 +1,34 @@
+/* LOGO */
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        padding: 0;
+        
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: calc(31/26);
+    }
+}
+
+.logo__black {
+    color: var(--black-text);
+}
+
+.logo__white {
+    color: var(--color-white);
+}

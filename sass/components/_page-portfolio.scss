@@ -1,0 +1,139 @@
+/*PORTFOLIO - PROJECTS SECTION*/
+
+.list-button {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 8px;
+    justify-content: center;
+
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+
+    // tablet and phone
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 8px;
+
+        max-width: 100%;
+    }
+}
+
+/* projects-list */
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project {
+    display: block;
+    color: currentColor;
+
+    transition: box-shadow var(--anim);
+
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.project__img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.project__img-text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+
+    transition: transform var(--anim);
+
+    width: 100%;
+    height: 100%;
+
+    padding-left: 24px;
+    padding-right: 24PX;
+    padding-top: 77px;
+
+    backdrop-filter: blur(2px);
+    background-color: rgba(33, 150, 243, 0.9);
+
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        padding-top: 49px;
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        padding-top: 63px;
+    }
+
+
+    .project:hover &,
+    .project:focus & {
+        transform: translateY(0);
+    }
+}
+
+.project__img-text {
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+}
+
+.project__border {
+    border: 1px solid var(--projects-frame);
+    border-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    max-width: 100%;
+
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        max-width: 100%;
+    }
+}
+
+.project__name {
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        font-size: 17px;
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+.project__text {
+    line-height: calc(30/16);
+}

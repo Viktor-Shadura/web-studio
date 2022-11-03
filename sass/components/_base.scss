@@ -1,0 +1,23 @@
+/*BASE STYLES*/
+body {
+    font-family: var(--main-text);
+    color: var(--paragraph-text-color);
+
+    line-height: calc(16/30);
+    letter-spacing: 0.03em;
+}
+
+.section {
+    // phone and tablet
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    // outline: 2px solid rgb(23, 168, 161);
+
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}

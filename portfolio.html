@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <!--favicon-start-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_webstudio_logo/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_webstudio_logo/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_webstudio_logo/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon_webstudio_logo/site.webmanifest" />
+    <link rel="mask-icon" href="./images/favicon_webstudio_logo/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--favicon-stop-->
+    <!--modern-normalize-start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--modern-normalize-stop-->
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+
+  <body class="body">
+
+    <!--HEADER-->
+    <header class="header">
+      <div class="header__box container">
+        <a class="logo header__logo link" href="./index.html">Web<span class="logo logo__black">Studio</span></a>
+        <!--mob-menu-open-->
+        <button class="mob-menu-on js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#ph-menu_on"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="nav list">
+            <li><a class="nav__link link" href="./index.html">Студія</a></li>
+            <li><a class="nav__link nav__active link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="nav__link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contacts list">
+          <li>
+            <a class="header__contacts-link link" href="mailto:info@devstudio.com">
+              <svg class="header__contacts-ikons" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header__contacts-link link" href="tel:+380961111111">
+              <svg class="header__contacts-ikons" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <!--PORTFOLIO LIST-BUTTON-->
+
+      <section class="section">
+        <div class="container">
+        <h1 class="title title--none">Наші проекти</h1>
+        <ul class="list-button list">
+          <li><button class="btn-small" type="button">Усі</button></li>
+          <li><button class="btn-small" type="button">Веб-сайти</button></li>
+          <li><button class="btn-small" type="button">Додатки</button></li>
+          <li><button class="btn-small" type="button">Дизайн</button></li>
+          <li><button class="btn-small" type="button">Маркетинг</button></li>
+        </ul>
+
+        <!--PORTFOLIO OUR-PROJECTS-->
+
+        <ul class="projects-list list">
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)" srcset="./images/project/project-1_ds-@1x.jpg 1x, ./images/project/project-1_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)" srcset="./images/project/project-1_tb-@1x.jpg 1x, ./images/project/project-1_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)" srcset="./images/project/project-1_ph-@1x.jpg 1x, ./images/project/project-1_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-1_ph-@2x.jpg" alt="Ноутбук з демонстрацією мінімалістичного дизайну сайту">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Технокряк</h2>
+              <p class="project__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-2_ds-@1x.jpg 1x, ./images/project/project-2_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-2_tb-@1x.jpg 1x, ./images/project/project-2_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-2_ph-@1x.jpg 1x, ./images/project/project-2_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-2_ph-@2x.jpg" alt="Постер з артом перехоплення м'яча у баскетболі">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+              <p class="project__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-3_ds-@1x.jpg 1x, ./images/project/project-3_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-3_tb-@1x.jpg 1x, ./images/project/project-3_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-3_ph-@1x.jpg 1x, ./images/project/project-3_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-3_ph-@2x.jpg" alt="Дизайн завантажувального екрану програми з рибкою на фоні та написом на передньому плані">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="project__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-4_ds-@1x.jpg 1x, ./images/project/project-4_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-4_tb-@1x.jpg 1x, ./images/project/project-4_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-4_ph-@1x.jpg 1x, ./images/project/project-4_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-4_ph-@2x.jpg" alt="Чорні накладні бездротові навушники на білому тлі">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Проєкт <span lang="en">Prime</span></h2>
+              <p class="project__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-5_ds-@1x.jpg 1x, ./images/project/project-5_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-5_tb-@1x.jpg 1x, ./images/project/project-5_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-5_ph-@1x.jpg 1x, ./images/project/project-5_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-5_ph-@2x.jpg" alt="Дві стильні коробки з різними кольорами та розмірами">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Проєкт <span lang="en">Boxes</span></h2>
+              <p class="project__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-6_ds-@1x.jpg 1x, ./images/project/project-6_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-6_tb-@1x.jpg 1x, ./images/project/project-6_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-6_ph-@1x.jpg 1x, ./images/project/project-6_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-6_ph-@2x.jpg" alt="Сайт у темних тонах з картою світу">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name" lang="en">Inspiration has no Borders</h2>
+              <p class="project__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-7_ds-@1x.jpg 1x, ./images/project/project-7_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-7_tb-@1x.jpg 1x, ./images/project/project-7_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-7_ph-@1x.jpg 1x, ./images/project/project-7_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-7_ph-@2x.jpg" alt="Журнал з мінімалістичним дизайном та версткою">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Видання <span lang="en">Limited Edition</span></h2>
+              <p class="project__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-8_ds-@1x.jpg 1x, ./images/project/project-8_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-8_tb-@1x.jpg 1x, ./images/project/project-8_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-8_ph-@1x.jpg 1x, ./images/project/project-8_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-8_ph-@2x.jpg" alt="Білий стікер на мотузочці з чорним написом">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name">Проєкт <span lang="en">LAB</span></h2>
+              <p class="project__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="project link" href="" >
+              <div class="project__img-box">
+                <picture>
+                  <!-- desktop -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/project/project-9_ds-@1x.jpg 1x, ./images/project/project-9_ds-@2x.jpg 2x">
+                  <!-- tablet -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/project/project-9_tb-@1x.jpg 1x, ./images/project/project-9_tb-@2x.jpg 2x">
+                  <!-- phone -->
+                  <source media="(min-width: 480px)"
+                    srcset="./images/project/project-9_ph-@1x.jpg 1x, ./images/project/project-9_ph-@2x.jpg 2x">
+                  <img src="./images/project/project-9_ph-@2x.jpg" alt="Чоловік працює у додатку на ноутбуці">
+                </picture>
+                <div class="project__img-text-box">
+                  <p class="project__img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__border">
+              <h2 class="project__name" lang="en">Growing Business</h2>
+              <p class="project__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container footer-box">
+        <div>
+          <a class="logo logo__footer link" lang="en" href="./index.html">Web<span class="logo__white">Studio</span></a>
+          <address class="address">
+            <ul class="address list">
+              <li class="address--contacts-margin">
+                <a class="link address--hover" target="_blank" rel="noopener noreferrer "
+                  href="https://goo.gl/maps/bQd3rtu6wxpAAsQa6">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="contacts address--contacts-margin" lang="en">
+                <a class="address--contacts-color link address--hover"
+                  href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="address--contacts-color link address--hover" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-box">
+          <p class="footer-title">приєднуйтесь</p>
+    
+          <ul class="socials list">
+            <li>
+              <a class="socials__item socials__item--color" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="instagram">
+                <svg class="socials__icon socials__icon--fill" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials__item socials__item--color" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="twitter">
+                <svg class="socials__icon socials__icon--fill" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials__item socials__item--color" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="facebook">
+                <svg class="socials__icon socials__icon--fill" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials__item socials__item--color" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="linkedin">
+                <svg class="socials__icon socials__icon--fill" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-box">
+          <p class="footer-title">Підпишіться на розсилку</p>
+          <form class="subscribe-form" name="subscribe" autocomplete="on" novalidate>
+            <label for="subscribe-lebel">
+              <input class="subscribe-form__input" type="text" name="email" placeholder="E-mail">
+            </label>
+            <button class="btn btn__subscribe" type="submit">Підписатися
+              <svg class="btn__icon" width="24" height="24">
+                <use href="./images/icons.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!--mob-menu-start-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mob-menu-off menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#ph-menu_off"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu list">
+          <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./index.html">Студія</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link link" href="">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="mobile-contacts__item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-socials list">
+          <li><a class="mobile-socials__link link" href="">Instagram</a></li>
+          <li><a class="mobile-socials__link link" href="">Twitter</a></li>
+          <li><a class="mobile-socials__link link" href="">Facebook</a></li>
+          <li><a class="mobile-socials__link link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--mob-menu-finish-->
+
+    <script src="./js/modal.js"></script>
+    <!--mob-menu-script-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
